@@ -75,10 +75,11 @@ Hi John
 - Even though `greet()` has finished executing, the lambda function retains access to `name`.
 - Calling `message()` executes the lambda, accessing `name` from the closure.
 
-### Why Closures Work
+### Why Closures Work MOOOOOOSTTTTT IMPPPPPP
 
 - Python stores the outer function’s variables in the inner function’s `__closure__` attribute.
 - This preserves the variable’s value, allowing the inner function to use it later.
+- However, Lambda can access these variables because they’re now part of the lambda func (a closure) itself. That’s why you can say that a closure is a function with an extended scope.
 
 ## Key Points
 
